@@ -66,6 +66,32 @@ a {
     letter-spacing: 0.15em;
 }
 
+.lang-switch {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.lang-switch a {
+    font-weight: 300;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.lang-switch a.active {
+    opacity: 1;
+    font-weight: 500;
+}
+
+.lang-switch a:hover {
+    opacity: 1;
+}
+
+.lang-switch span {
+    opacity: 0.3;
+}
+
 .menu-btn {
     display: none;
     background: none;

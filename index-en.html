@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOING - Beauty That Stays With You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo-text">OOING</div>
+            <div class="lang-switch">
+                <a href="index-en.html" class="active">ENGLISH</a>
+                <span>|</span>
+                <a href="index.html">한국어</a>
+            </div>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <nav id="nav">
+                <a href="#about">About</a>
+                <a href="#brands">Brands</a>
+                <a href="#history">History</a>
+                <a href="notice.html">Notice</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="logo.svg" alt="OOING" class="hero-logo">
+            <h1>OOING</h1>
+            <p class="tagline">Beauty That Stays With You</p>
+            <p class="subtitle">Premium Korean Beauty • B2B Global Supply</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About OOING</h2>
+                <p class="lead">OO (infinite) + ing (continuous) = Beauty that never ends</p>
+                <p>OOING specializes in premium Korean cosmetics for global B2B buyers. We believe in timeless beauty, exceptional quality, and transparent business practices.</p>
+                <p>Currently operating as a trusted distributor, we are preparing to launch our own manufactured line of scientifically-backed, minimalist beauty products for direct-to-consumer markets.</p>
+            </div>
+            
+            <div class="brands-section" id="brands">
+                <h3>Our Brands</h3>
+                <div class="brands-grid">
+                    <a href="https://muuuni.com" target="_blank" class="brand-card">
+                        <h4>MUUUNI</h4>
+                        <p>Authorized distributor</p>
+                    </a>
+                    <a href="https://exome.co.kr" target="_blank" class="brand-card">
+                        <h4>EXOME</h4>
+                        <p>Premium K-Beauty</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history" id="history">
+        <div class="container">
+            <h2>History</h2>
+            <div class="timeline-vertical">
+                <div class="history-item">
+                    <div class="year">2025</div>
+                    <div class="content">
+                        <h3>OOING Founded</h3>
+                        <p>Established as premium Korean beauty B2B distributor</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="year">2026</div>
+                    <div class="content">
+                        <h3>MUUUNI Partnership</h3>
+                        <p>Became authorized distributor for MUUUNI brand</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="year">2026</div>
+                    <div class="content">
+                        <h3>EXOME Partnership</h3>
+                        <p>Partnered with EXOME brand</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="year">2026</div>
+                    <div class="content">
+                        <h3>Global Expansion</h3>
+                        <p>Serving 150+ countries worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="info-block">
+                    <h3>Email</h3>
+                    <p><a href="mailto:ooing.official@gmail.com">ooing.official@gmail.com</a></p>
+                </div>
+                <div class="info-block">
+                    <h3>Business Registration</h3>
+                    <p>754-31-01610</p>
+                </div>
+                <div class="info-block">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="https://www.alibaba.com" target="_blank">Alibaba.com</a>
+                        <a href="https://www.instagram.com/ooing.official" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 OOING. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const nav = document.getElementById('nav');
+        const overlay = document.getElementById('overlay');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
