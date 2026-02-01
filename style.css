@@ -14,7 +14,7 @@ body {
     color: #2a2a2a;
     line-height: 1.7;
     overflow-x: hidden;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .container {
@@ -299,6 +299,50 @@ a {
     color: #5a5a5a;
     font-weight: 400;
     line-height: 1.6;
+}
+
+.notice {
+    padding: 120px 0;
+    border-top: 1px solid #eee;
+}
+
+.notice h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.notice-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.notice-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.notice-item:hover {
+    background: #fafafa;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.notice-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.notice-date {
+    font-size: 0.9rem;
+    color: #999;
 }
 
 .contact {
