@@ -185,6 +185,13 @@ a {
     padding: 40px 30px;
     border: 1px solid #ddd;
     background: #fafafa;
+    transition: all 0.3s;
+    display: block;
+}
+
+.brand-card:hover {
+    border-color: #000;
+    background: #fff;
 }
 
 .brand-card h4 {
