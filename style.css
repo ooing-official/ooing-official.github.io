@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,6 @@ a {
     text-decoration: none;
 }
 
-/* Fixed Header - The Ordinary style */
 .header {
     position: fixed;
     top: 0;
@@ -69,7 +67,6 @@ a {
     opacity: 0.6;
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -108,7 +105,6 @@ a {
     letter-spacing: 0.05em;
 }
 
-/* About Section - The Ordinary inspired */
 .about {
     padding: 120px 0;
     border-top: 1px solid #222;
@@ -225,7 +221,6 @@ a {
     color: #888;
 }
 
-/* Why OOING Section */
 .why-ooing {
     padding: 120px 0;
     border-top: 1px solid #222;
@@ -271,7 +266,6 @@ a {
     line-height: 1.6;
 }
 
-/* Contact Section */
 .contact {
     padding: 120px 0;
     border-top: 1px solid #222;
@@ -331,7 +325,6 @@ a {
     border-color: #fff;
 }
 
-/* Footer */
 footer {
     padding: 40px 0;
     text-align: center;
@@ -345,7 +338,6 @@ footer p {
     letter-spacing: 0.05em;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
