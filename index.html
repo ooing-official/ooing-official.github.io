@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Fixed Header -->
+    <div class="overlay" id="overlay"></div>
+    
     <header class="header">
         <div class="container">
             <div class="logo-text">OOING</div>
-            <nav>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <nav id="nav">
                 <a href="#about">About</a>
+                <a href="#history">History</a>
                 <a href="#why">Why OOING</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <img src="logo.svg" alt="OOING" class="hero-logo">
@@ -29,7 +31,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-content">
@@ -55,7 +56,35 @@
         </div>
     </section>
 
-    <!-- Why OOING Section -->
+    <section class="history" id="history">
+        <div class="container">
+            <h2>History</h2>
+            <div class="timeline-vertical">
+                <div class="history-item">
+                    <div class="year">2025</div>
+                    <div class="content">
+                        <h3>OOING Founded</h3>
+                        <p>Established as premium Korean beauty B2B distributor</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="year">2025</div>
+                    <div class="content">
+                        <h3>MUUUNI Partnership</h3>
+                        <p>Became authorized distributor for MUUUNI brand</p>
+                    </div>
+                </div>
+                <div class="history-item">
+                    <div class="year">2026</div>
+                    <div class="content">
+                        <h3>Global Expansion</h3>
+                        <p>Serving 150+ countries worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="why-ooing" id="why">
         <div class="container">
             <h2>Why OOING</h2>
@@ -104,7 +133,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <h2>Contact</h2>
@@ -133,5 +161,21 @@
             <p>&copy; 2025 OOING. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const nav = document.getElementById('nav');
+        const overlay = document.getElementById('overlay');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 </body>
 </html>
