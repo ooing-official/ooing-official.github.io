@@ -5,18 +5,68 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     background: #000;
     color: #fff;
-    line-height: 1.6;
+    line-height: 1.7;
     overflow-x: hidden;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Fixed Header - The Ordinary style */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    border-bottom: 1px solid #333;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+}
+
+.header nav {
+    display: flex;
+    gap: 40px;
+}
+
+.header nav a {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.header nav a:hover {
+    opacity: 0.6;
 }
 
 /* Hero Section */
@@ -26,193 +76,259 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: 1px solid #222;
+    padding-top: 80px;
 }
 
-.logo {
-    width: 200px;
-    height: 200px;
+.hero-logo {
+    width: 120px;
+    height: 120px;
     object-fit: contain;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     filter: brightness(1.1);
 }
 
 .hero h1 {
-    font-size: 5rem;
-    font-weight: 300;
-    letter-spacing: 0.2em;
+    font-size: 4rem;
+    font-weight: 200;
+    letter-spacing: 0.3em;
     margin-bottom: 20px;
 }
 
 .tagline {
-    font-size: 1.5rem;
-    color: #C0C0C0;
+    font-size: 1.2rem;
+    color: #ccc;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #888;
     font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+/* About Section - The Ordinary inspired */
+.about {
+    padding: 120px 0;
+    border-top: 1px solid #222;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.lead {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.brands-section {
+    margin: 80px 0;
+    padding-top: 60px;
+    border-top: 1px solid #222;
+}
+
+.brands-section h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.brand-card {
+    padding: 40px 30px;
+    border: 1px solid #333;
+    background: #0a0a0a;
+}
+
+.brand-card h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.brand-card p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.future-lines {
+    padding-top: 60px;
+    border-top: 1px solid #222;
+}
+
+.future-lines h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.timeline-item {
+    text-align: center;
+}
+
+.year {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.timeline-item h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: #888;
 }
 
 /* Why OOING Section */
 .why-ooing {
-    padding: 100px 0;
-    border-bottom: 1px solid #222;
+    padding: 120px 0;
+    border-top: 1px solid #222;
 }
 
 .why-ooing h2 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    text-align: center;
-    margin-bottom: 60px;
     letter-spacing: 0.1em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
 }
 
-.grid {
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-}
-
-.item {
-    padding: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1px;
+    background: #222;
     border: 1px solid #222;
-    transition: all 0.3s ease;
 }
 
-.item:hover {
-    border-color: #C0C0C0;
+.feature {
+    background: #000;
+    padding: 35px 25px;
+    transition: background 0.3s;
+}
+
+.feature:hover {
     background: #0a0a0a;
 }
 
-.icon {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #C0C0C0;
-}
-
-.item h3 {
-    font-size: 1.2rem;
+.feature h3 {
+    font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     letter-spacing: 0.05em;
 }
 
-.item p {
-    font-size: 0.95rem;
-    color: #888;
-    font-weight: 300;
-}
-
-/* About Section */
-.about {
-    padding: 100px 0;
-    border-bottom: 1px solid #222;
-}
-
-.about h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 40px;
-    letter-spacing: 0.1em;
-}
-
-.large {
-    font-size: 1.5rem;
-    text-align: center;
-    color: #C0C0C0;
-    margin-bottom: 30px;
-    font-weight: 300;
-}
-
-.about > .container > p {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 60px;
-    color: #aaa;
-    font-weight: 300;
-    font-size: 1.1rem;
-}
-
-.brands {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin-top: 60px;
-}
-
-.brand {
-    text-align: center;
-    padding: 40px 20px;
-    border: 1px solid #222;
-}
-
-.brand h3 {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-    letter-spacing: 0.1em;
-}
-
-.brand p {
-    color: #888;
+.feature p {
     font-size: 0.9rem;
+    color: #888;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
-    padding: 100px 0;
-    text-align: center;
+    padding: 120px 0;
+    border-top: 1px solid #222;
 }
 
 .contact h2 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 40px;
-    letter-spacing: 0.1em;
-}
-
-.email {
     font-size: 1.5rem;
-    color: #C0C0C0;
-    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+}
+
+.info-block h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.info-block p {
+    font-size: 1rem;
     font-weight: 300;
 }
 
-.company-info {
-    color: #888;
-    margin-bottom: 40px;
-    font-size: 0.95rem;
+.info-block a {
+    transition: opacity 0.3s;
 }
 
-.platforms p {
-    color: #888;
-    margin-bottom: 15px;
+.info-block a:hover {
+    opacity: 0.6;
 }
 
-.links {
+.social-links {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 30px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease;
-    font-size: 0.95rem;
+.social-links a {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    transition: border-color 0.3s;
 }
 
-.links a:hover {
-    background: #fff;
-    color: #000;
+.social-links a:hover {
+    border-color: #fff;
 }
 
 /* Footer */
@@ -224,28 +340,35 @@ footer {
 
 footer p {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 300;
+    letter-spacing: 0.05em;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .header nav {
+        gap: 20px;
+    }
+    
+    .header nav a {
+        font-size: 0.8rem;
+    }
+    
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
-    .logo {
-        width: 150px;
-        height: 150px;
+    .hero-logo {
+        width: 100px;
+        height: 100px;
     }
     
-    .why-ooing h2,
-    .about h2,
-    .contact h2 {
-        font-size: 2rem;
-    }
-    
-    .grid {
+    .features-grid {
         grid-template-columns: 1fr;
     }
 }
